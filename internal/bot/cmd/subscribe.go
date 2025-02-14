@@ -101,7 +101,7 @@ func (cmd *Subscribe) Handle(s *discordgo.Session, i *discordgo.InteractionCreat
 
 		term := db.Term{
 			EN: searchTermEN,
-			JP: searchTermJP,
+			JP: searchTermEN,
 		}
 
 		err = cmd.db.CreateTerm(&term)
